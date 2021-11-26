@@ -14,14 +14,14 @@ class Bank:
         else : return False
 
     def deposit(self, account: int, money: int) -> bool:
-        # 계좌에 돈을 넣는다
+        # 계좌에 돈을 넣음
         if account <= 0 or account > len(self.balance) :
             return False
         self.balance[account-1] += money
         return True
 
     def withdraw(self, account: int, money: int) -> bool:
-        # 계좌에서 돈을 뺀다
+        # 계좌에서 돈을 뺌
         if account <= 0 or account > len(self.balance) :
             return False
         if self.balance[account-1] < money:
