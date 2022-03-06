@@ -1,3 +1,4 @@
+# 백준 1495 기타리스트 84ms
 n, s, m = map(int, input().split()) 
 v = list(map(int, input().split())) 
 
